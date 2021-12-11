@@ -1,0 +1,39 @@
+ManifestFileVersion: 0
+CRC: 1462994153
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0f84430a56d15750eac56e9123395fa1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bb28e223b524cc6b7637a7337cb8f8b5
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Materials/thomas-the-tank-engine/Gray.mat
+- Assets/Materials/thomas-the-tank-engine/Thomas1Tex.png
+- Assets/Materials/thomas-the-tank-engine/Black.mat
+- Assets/Prefabs/thomas.prefab
+- Assets/Materials/thomas-the-tank-engine/Thomas1Tex.mat
+- Assets/Materials/thomas-the-tank-engine/Red.mat
+- Assets/thomas.obj
+Dependencies: []

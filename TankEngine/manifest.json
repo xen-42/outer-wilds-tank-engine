@@ -1,0 +1,8 @@
+{
+  "filename": "TankEngine.dll",
+  "author": "xen",
+  "name": "Thomas the Tank Engine",
+  "uniqueName": "xen.TankEngine",
+  "version": "0.1.0",
+  "owmlVersion": "2.1.0"
+}

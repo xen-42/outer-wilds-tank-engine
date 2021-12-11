@@ -1,5 +1,7 @@
 # Outer Thomas Echoes of the Tank Engine
 
+![outer thomas 2](https://user-images.githubusercontent.com/22628069/145692690-428b0547-2ecf-4c41-896a-3dbcc26208ba.png)
+
 ![outer thomas](https://user-images.githubusercontent.com/22628069/145691202-ec103229-1509-4969-a4cf-7070e40d6a28.png)
 
 Listen man I don't know ok

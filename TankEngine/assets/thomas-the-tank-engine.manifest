@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1462994153
+CRC: 1740644184
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0f84430a56d15750eac56e9123395fa1
+    Hash: 007dd14d1564e1f1ef5607ee4fa7e92f
   TypeTreeHash:
     serializedVersion: 2
-    Hash: bb28e223b524cc6b7637a7337cb8f8b5
+    Hash: 371e36b957a36e2d5a605698cff3fe00
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -27,6 +27,10 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 65
   Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Materials/thomas-the-tank-engine/Gray.mat
@@ -35,5 +39,6 @@ Assets:
 - Assets/Prefabs/thomas.prefab
 - Assets/Materials/thomas-the-tank-engine/Thomas1Tex.mat
 - Assets/Materials/thomas-the-tank-engine/Red.mat
+- Assets/thomas-theme.wav
 - Assets/thomas.obj
 Dependencies: []

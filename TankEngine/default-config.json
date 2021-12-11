@@ -1,6 +1,11 @@
 {
 	"enabled": true,
 	"settings": {
-		"Play audio": true
+		"Audio volume": {
+			"type": "slider",
+			"value": "0.3",
+			"min": 0,
+			"max": 1
+		}
 	}
 }

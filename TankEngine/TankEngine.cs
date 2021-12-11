@@ -10,16 +10,13 @@ namespace TankEngine
     public class TankEngine : ModBehaviour
     {
         public static TankEngine Instance;
-        private static Shader standardShader = Shader.Find("Standard");
+        private static readonly Shader standardShader = Shader.Find("Standard");
         
         private GameObject _thomasPrefab;
-        private AudioClip _thomasTheme;
-
         private AudioSource _audioSource;
+        private float _audioVolume;
 
         private bool _loaded = false;
-
-        private bool _playAudio;
 
         private void Start()
         {
@@ -28,7 +25,6 @@ namespace TankEngine
             var bundle = ModHelper.Assets.LoadBundle("thomas-the-tank-engine");
 
             _thomasPrefab = LoadPrefab(bundle, "Assets/Prefabs/thomas.prefab");
-            _thomasTheme = ModHelper.Assets.GetAudio("thomas-theme.mp3");
 
             LoadManager.OnCompleteSceneLoad += OnCompleteSceneLoad;
         }
@@ -41,11 +37,12 @@ namespace TankEngine
         public override void Configure(IModConfig config)
         {
             base.Configure(config);
-            _playAudio = config.GetSettingsValue<bool>("Play audio");
+            _audioVolume = config.GetSettingsValue<float>("Audio volume");
             if(_loaded && _audioSource != null)
             {
-                if (!_playAudio && _audioSource.isPlaying) _audioSource.Stop();
-                if (_playAudio && !_audioSource.isPlaying) _audioSource.Play();
+                if (_audioVolume == 0 && _audioSource.isPlaying) _audioSource.Stop();
+                if (_audioVolume > 0 &&  !_audioSource.isPlaying) _audioSource.Play();
+                _audioSource.volume = _audioVolume;
             }
         }
 
@@ -63,8 +60,13 @@ namespace TankEngine
 
             var ship = GameObject.Find("Ship_Body").gameObject;
             var thomas = GameObject.Instantiate(_thomasPrefab, ship.transform);
-            thomas.transform.localPosition = new Vector3(-4.5f, -4f, 0f);
+            thomas.transform.localPosition = new Vector3(0, -0.5f, 0f);
             thomas.transform.localScale = Vector3.one * 0.3f;
+            _audioSource = thomas.GetComponent<AudioSource>();
+            if (_audioVolume > 0) _audioSource.Play();
+            else _audioSource.Stop();
+            _audioSource.volume = _audioVolume;
+
             thomas.SetActive(true);
 
             var toDelete = new string[]
@@ -115,19 +117,9 @@ namespace TankEngine
             // Add smoke
             var smoke = GameObject.Find("GabbroIsland_Body/Sector_GabbroIsland/Interactables_GabbroIsland/Prefab_HEA_Campfire/Effects/Effects_HEA_SmokeColumn/");
             var thomasSmoke = GameObject.Instantiate(smoke, thomas.transform);
-            thomasSmoke.transform.localPosition = new Vector3(15.5f, 35f, 21f);
+            thomasSmoke.transform.localPosition = new Vector3(0f, 24f, 21f);
             thomasSmoke.transform.localScale = Vector3.one * 3f;
             thomasSmoke.SetActive(true);
-
-            var audioSourceObj = new GameObject("Thomas Theme");
-            audioSourceObj.transform.parent = ship.transform;
-            audioSourceObj.transform.localPosition = Vector3.zero;
-            _audioSource = audioSourceObj.AddComponent<AudioSource>();
-            _audioSource.clip = _thomasTheme;
-            _audioSource.loop = true;
-            _audioSource.minDistance = 5f;
-            _audioSource.maxDistance = 15f;
-            if(_playAudio) _audioSource.Play();
         }
 
         private static GameObject LoadPrefab(AssetBundle bundle, string path)

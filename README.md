@@ -1,6 +1,6 @@
 # Outer Thomas Echoes of the Tank Engine
 
-![outer thomas 2](https://user-images.githubusercontent.com/22628069/145692690-428b0547-2ecf-4c41-896a-3dbcc26208ba.png)
+![outer thomas 2](https://user-images.githubusercontent.com/22628069/145695526-b2b4dc97-8c53-4a2b-b987-15f7f143d771.png)
 
 ![outer thomas](https://user-images.githubusercontent.com/22628069/145691202-ec103229-1509-4969-a4cf-7070e40d6a28.png)
 

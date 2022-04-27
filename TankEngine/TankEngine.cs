@@ -23,7 +23,7 @@ namespace TankEngine
         {
             Instance = this;
 
-            var bundle = ModHelper.Assets.LoadBundle("thomas-the-tank-engine");
+            var bundle = ModHelper.Assets.LoadBundle("assets/thomas-the-tank-engine");
 
             _thomasPrefab = LoadPrefab(bundle, "Assets/Prefabs/thomas.prefab");
 

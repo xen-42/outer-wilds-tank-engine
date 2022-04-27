@@ -29,6 +29,12 @@
 	<None Include="assets\**">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+	<None Include="translations\**">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	<None Include="icons\**">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="TankEngine.csproj.user" />

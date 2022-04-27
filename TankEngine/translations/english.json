@@ -1,0 +1,16 @@
+{
+    "AchievementTranslations": {
+        "TANK_ENGINE_SUN": {
+            "Name": "Thomas and His Firey Death",
+            "Description": "Fly into the sun with Thomas."
+        },
+        "TANK_ENGINE_FISH": {
+            "Name": "Thomas and His Fishy Death",
+            "Description": "Get digested while flying Thomas."
+        },
+        "TANK_ENGINE_ENTER": {
+            "Name": "You've Got a Friend in Me",
+            "Description": "Uh."
+        }
+    }
+}

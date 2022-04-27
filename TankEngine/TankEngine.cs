@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.PostProcessing;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using TankEngine.achievements;
 
 namespace TankEngine
 {
@@ -27,6 +28,8 @@ namespace TankEngine
             _thomasPrefab = LoadPrefab(bundle, "Assets/Prefabs/thomas.prefab");
 
             LoadManager.OnCompleteSceneLoad += OnCompleteSceneLoad;
+
+            AchievementHandler.Init();
         }
 
         private void OnDestroy()
@@ -152,9 +155,9 @@ namespace TankEngine
             return prefab;
         }
 
-        private static void Log(string message)
+        public static void Log(string message)
         {
-            Instance.ModHelper.Console.WriteLine(message, MessageType.Info);
+            Instance.ModHelper.Console.WriteLine($"[Tank Engine]: {message}", MessageType.Info);
         }
     }
 }

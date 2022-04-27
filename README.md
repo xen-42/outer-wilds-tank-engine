@@ -8,6 +8,8 @@ Listen man I don't know ok
 
 Use with my [third person camera mod](https://github.com/xen-42/outer-wilds-third-person-camera) for the full experience.
 
+Thank you Spacecorn on the modding discord for making the Thomas icon for the achievements (and for the Thomas burning one).
+
 Credits for the Thomas the Tank Engine model used:
 
 "Thomas the Tank Engine (from Thomas & Friends)" (https://skfb.ly/o6w9W) by Thomas the Tank Engine 1000 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).

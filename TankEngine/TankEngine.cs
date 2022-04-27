@@ -154,7 +154,7 @@ namespace TankEngine
 
         private static void Log(string message)
         {
-            TankEngine.Instance.ModHelper.Console.WriteLine(message, OWML.Common.MessageType.Info);
+            Instance.ModHelper.Console.WriteLine(message, MessageType.Info);
         }
     }
 }

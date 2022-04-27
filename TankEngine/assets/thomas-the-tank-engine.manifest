@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1740644184
+CRC: 1298394571
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 007dd14d1564e1f1ef5607ee4fa7e92f
+    Hash: 13c4341b239f8f514ad5dd918e308d1b
   TypeTreeHash:
     serializedVersion: 2
     Hash: 371e36b957a36e2d5a605698cff3fe00
@@ -37,8 +37,10 @@ Assets:
 - Assets/Materials/thomas-the-tank-engine/Thomas1Tex.png
 - Assets/Materials/thomas-the-tank-engine/Black.mat
 - Assets/Prefabs/thomas.prefab
+- Assets/thomas_nowheels.obj
 - Assets/Materials/thomas-the-tank-engine/Thomas1Tex.mat
 - Assets/Materials/thomas-the-tank-engine/Red.mat
 - Assets/thomas-theme.wav
 - Assets/thomas.obj
-Dependencies: []
+Dependencies:
+- F:/Outer Wilds Modding/Unity/Half Life Models/Assets/StreamingAssets/hlmodels

@@ -6,7 +6,7 @@
 
 Listen man I don't know ok
 
-Use with my third person camera mod for the full experience.
+Use with my [third person camera mod](https://github.com/xen-42/outer-wilds-third-person-camera) for the full experience.
 
 Credits for the Thomas the Tank Engine model used:
 

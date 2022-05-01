@@ -1,0 +1,16 @@
+{
+    "AchievementTranslations": {
+        "TANK_ENGINE_SUN": {
+            "Name": "История о Томасе и огне",
+            "Description": "Врежтесь в Солнце с Томасом."
+        },
+        "TANK_ENGINE_FISH": {
+            "Name": "История о Томасе и рыбе",
+            "Description": "Будьте съеденным удильщиком, пока находитесь внутри Томаса."
+        },
+        "TANK_ENGINE_ENTER": {
+            "Name": "Твой новый друг",
+            "Description": "Ух."
+        }
+    }
+}
